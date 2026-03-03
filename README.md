@@ -3,7 +3,7 @@
 This project generates a QR code containing my personal details using Python.
 
 ## 👩‍💻 Author
-Priyadarshini Dumpa  
+Priyadarshini   
 B.Tech (Artificial Intelligence & Data Science)  
 GitHub: https://github.com/Darshini807  
 

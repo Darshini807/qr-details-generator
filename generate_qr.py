@@ -1,14 +1,7 @@
 import qrcode
 
 # ====== YOUR DETAILS ======
-details =   """
-Name: Priyadarshini 
-Course: B.Tech (Artificial Intelligence & Data Science)
-Year: 3rd Year
-College: Your College Name
-GitHub: https://github.com/Darshini807
-Email: your_email@example.com
-"""
+details =   "https://darshini807.github.io/qr-details-generator/"
 
 # Create QR Code
 qr = qrcode.QRCode(

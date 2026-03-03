@@ -1,35 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Priyadarshini - Profile</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding-top: 50px;
-        }
-        .card {
-            background: white;
-            width: 350px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px gray;
-        }
-        h2 {
-            color: #333;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyadarshini | AI Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:#0f0f1a;
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* Animated Gradient Blobs */
+.blob{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,#00f0ff,#ff00c8);
+    border-radius:50%;
+    filter:blur(120px);
+    animation:move 10s infinite alternate ease-in-out;
+}
+
+.blob2{
+    top:20%;
+    left:60%;
+    animation-delay:5s;
+}
+
+@keyframes move{
+    from{transform:translate(-50px,-50px);}
+    to{transform:translate(50px,50px);}
+}
+
+/* Glass Card */
+.card{
+    position:relative;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:50px;
+    border-radius:25px;
+    width:400px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,255,255,0.2);
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 60px rgba(255,0,255,0.5);
+}
+
+h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:26px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.typing{
+    font-size:16px;
+    height:22px;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:2px solid white;
+    animation:typing 4s steps(30,end) infinite alternate;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:100%}
+}
+
+.skills{
+    margin-top:25px;
+}
+
+.skill{
+    margin:10px 0;
+    text-align:left;
+}
+
+.bar{
+    height:8px;
+    background:rgba(255,255,255,0.1);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    background:linear-gradient(90deg,#00f0ff,#ff00c8);
+}
+
+.btn{
+    margin-top:25px;
+    padding:10px 25px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#00f0ff,#ff00c8);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #ff00c8;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+</style>
 </head>
+
 <body>
 
+<div class="blob"></div>
+<div class="blob blob2"></div>
+
 <div class="card">
-    <h2>Priyadarshini </h2>
-    <p><b>Course:</b> B.Tech (AI & Data Science)</p>
-    <p><b>Year:</b> 3rd Year</p>
-    <p><b>GitHub:</b> <a href="https://github.com/Darshini807">Darshini807</a></p>
-    <p><b>Email:</b> priya@gmail.com</p>
+    <h1>Priyadarshini </h1>
+    <div class="typing">AI & Data Science Engineer | Innovator | Builder</div>
+
+    <div class="skills">
+        <div class="skill">
+            Python
+            <div class="bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+            Machine Learning
+            <div class="bar"><div class="progress" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+            Web Development
+            <div class="bar"><div class="progress" style="width:80%"></div></div>
+        </div>
+    </div>
+
+    <a href="https://github.com/Darshini807" target="_blank">
+        <button class="btn">View My GitHub</button>
+    </a>
 </div>
 
 </body>
